@@ -1,7 +1,7 @@
 function squareEvensRootOdds(s){
   return s.split('|').map(function(num){
     if (num % 2 === 0){return Math.pow(num,2).toFixed(2);}
-    else {return Math.sqrt(num).toFixed(2);}
+    else {return Math.sqrt(num).toFixed(1);}
   });
 }
 
