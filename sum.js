@@ -1,8 +1,20 @@
-function sum(x, y){
-  return x + y;
+
+function squareEvensRootOdds(string){
+  var array = string.split("|");
+  var num = [];
+  for (var i in array){
+
+    if (i % 2 === 0) {
+      num.push (Math.pow(i, 2));
+    }
+    else {
+      num.push(Math.sqrt(i, 2));
+    }
+
+  }
+  return num;
 }
 
-// TEST
-
-var s = sum(3, 4);
-console.log('the sum of 3 and 4 is', s);
+var s = '3|4|5|6';
+var o = squareEvensRootOdds(s);
+console.log(o);
