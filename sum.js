@@ -8,15 +8,18 @@ var s = sum(3, 4);
 console.log('the sum of 3 and 4 is', s);
 */
 
+var s = '3|4|5|6';
+var o = squareEvensRootOdds(s);
+// => [1.7,16,2.2,36]
 
-var s = '3;4;5';
-var s = s.split(';');
-
-var o = cubeNums(s);
-
-function cubeNums (str){
-  for(var i = 0; i < str.length; i++){
-    Math.pow(parseInt(str[i], 3));
-  }
-  return(o);
+function squareEvensRootOdds(){
+  var str = s.split('|');
+  var num = str.map(function(n) {
+    if (n % 2 = 0) {
+      return Math.pow(n, 2);
+    }
+    else {
+      return Math.round(Math.sqrt(n))
+    }
+  })
 }
