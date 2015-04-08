@@ -1,0 +1,8 @@
+function reverseEvenLengthString(s){
+  var o = s.split(',').map(function(s){
+    if(s.length % 2){
+      s.reverse();
+    }
+  });
+}
+var s = 'cat,mule,horse,jquery';
