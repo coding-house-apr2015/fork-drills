@@ -1,6 +1,8 @@
 function squareEvensRootOdds (str) {
   var split = str.split("|");
-  var final = split.map(function(e){return e % 2 == 0 ? e * e : Math.sqrt(e)});
+  var final = split.map(function(e){
+    return e % 2 == 0 ? e * e : Math.sqrt(e)
+  });
   return final;
 }
 
